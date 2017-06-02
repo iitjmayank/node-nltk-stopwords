@@ -21,7 +21,7 @@ function remove(input, stopwords) {
         }).join(' ');
     } else {
         return input.filter(function (word) {
-            return !stopwords.has(word)
+            return !stopwords.has(word.toLowerCase())
         });
     }
 }
